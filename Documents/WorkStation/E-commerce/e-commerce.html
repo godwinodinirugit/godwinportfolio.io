@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Godwin AutoDrive Motors</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">Godwin AutoDrive Motors</div>
+
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#cars">Cars</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#cart">Cart (<span id="cart-count">0</span>)</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Find Your Budget Car</h1>
+            <p>Check out our collection of quality vehicles.</p>
+            <a href="#cars" class="btn">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- Search Section -->
+    <section class="search-section">
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search cars..."
+        >
+    </section>
+
+    <!-- Cars Section -->
+    <section id="cars" class="cars-section">
+        <h2>Featured Cars</h2>
+
+        <div class="car-grid">
+
+            <div class="car-card">
+                <img src="https://images.unsplash.com/photo-1550355291-bbee04a92027?w=600" alt="Toyota Camry">
+                <h3>2024 Toyota Camry</h3>
+                <p>#15,000,000</p>
+                <button class="add-cart" data-name="Toyota Camry" data-price="15000000">
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="car-card">
+                <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=600" alt="Honda Accord">
+                <h3>2024 Honda Accord</h3>
+                <p>#17,000,000</p>
+                <button class="add-cart" data-name="Honda Accord" data-price="17000000">
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="car-card">
+                <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=600" alt="BMW X5">
+                <h3>2024 BMW X5</h3>
+                <p>#30,000,000</p>
+                <button class="add-cart" data-name="BMW X5" data-price="30000000">
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="car-card">
+                <img src="https://images.unsplash.com/photo-1502877338535-766e1452684a?w=600" alt="Mercedes">
+                <h3>2024 Mercedes C-Class</h3>
+                <p>#25,000,000</p>
+                <button class="add-cart" data-name="Mercedes C-Class" data-price="25000000">
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="car-card">
+                <img src="https://images.unsplash.com/photo-1560958089-b8a1929cea89?w=600" alt="Tesla">
+                <h3>2024 Tesla Model 3</h3>
+                <p>#45,000,000</p>
+                <button class="add-cart" data-name="Tesla Model 3" data-price="45000000">
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="car-card">
+                <img src="https://images.unsplash.com/photo-1549399542-7e3f8b79c341?w=600" alt="Lexus">
+                <h3>2024 Lexus RX</h3>
+                <p>#50,000,000</p>
+                <button class="add-cart" data-name="Lexus RX" data-price="50000000">
+                    Add to Cart
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Cart Section -->
+    <section id="cart" class="cart-section">
+        <h2>Shopping Cart</h2>
+
+        <ul id="cart-items"></ul>
+
+        <h3>Total: $<span id="total">0</span></h3>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>
+          Godwin AutoDrive Motors is dedicated to providing high-quality vehicles
+            at affordable prices. We help customers find their perfect car.
+        </p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+
+        <form id="contactForm">
+            <input
+                type="text"
+                id="name"
+                placeholder="Your Name"
+            >
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Your Email"
+            >
+
+            <textarea
+                id="message"
+                placeholder="Your Message"
+            ></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; Godwin 2026 AutoDrive Motors. All Rights Reserved.</p>
+    </footer>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
